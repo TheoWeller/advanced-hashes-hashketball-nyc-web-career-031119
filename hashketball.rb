@@ -122,12 +122,13 @@ def team_names
   team_names_array = []
   team_names_array << game_hash[:home][:team_name]
   team_names_array << game_hash[:away][:team_name]
-  binding.pry
+  
 end
 
 def num_points_scored(player_name)
   game_hash.each do |location, team_data|
     team_data.each do |name, key|
+      binding.pry
       if key.include?(player_name)
     return key[player_name][:points]
       end
