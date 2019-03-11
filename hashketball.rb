@@ -122,7 +122,7 @@ def team_names
   team_names_array = []
   team_names_array << game_hash[:home][:team_name]
   team_names_array << game_hash[:away][:team_name]
-  
+
 end
 
 def num_points_scored(player_name)
